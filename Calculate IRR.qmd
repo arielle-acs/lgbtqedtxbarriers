@@ -1,0 +1,161 @@
+---
+title: "Calculate IRR"
+format: html
+---
+
+```{r load packages}
+#At the top of every R script, the first thing you should do is load all of the packages you need throughout or else the code may not run. To make collaboration easier, I also tell R to install scripts in case another user hasn't used a given package yet.
+
+if(!require(readr)){install.packages('readr')}
+library(readr)
+if(!require(tidyverse)){install.packages('tidyverse')}
+library(tidyverse) 
+if(!require(psych)){install.packages('psych')}
+library(psych)
+```
+
+```{r set working directory}
+#Your data lives in a "working directory" on your local device, meaning that we will each need to set different working directories with different file paths
+#When you run the code, you can comment out the other person's working directory so that the script is set to yours
+
+#Arielle's working directory
+setwd("/Users/pmt4073/Desktop/LSMH/R Scripts/LGBTQ ED Treatment Barriers") #this is how you set the working directory in a basic R script
+
+#Kade's working directory
+
+getwd() #this checks that the working directory was set correctly
+```
+
+```{r import data}
+#I downloaded the first sheet in each of our Google sheets as CSV files (my preferred file type for R) into my working directory. Prior to downloading, I removed the blank columns, shortened the column names and the names of the files to make them easier to use in R (R does not like spaces).
+
+#I like using the read_csv package to load in data and specifying that I want all the columns to be "character" variable types. Other packages do something to guess if a variable is character, numeric, factor, etc but sometimes it is wrong and that messes me up later. So I initially set everything as character and later will change specific variables to numeric or factor as needed.
+arielle_frequencies <- read_csv("Data/arielle_frequencies.csv", col_types = cols(.default = "c"))
+kade_frequencies <- read_csv("Data/kade_frequencies.csv", col_types = cols(.default = "c"))
+```
+
+```{r format data}
+#We need to change the columns with the 0s and 1s to factors
+arielle_frequencies <- arielle_frequencies %>%
+  mutate(across(Code_1:Code_11, as.factor))
+
+#Repeat above with Kade's data
+kade_frequencies <- kade_frequencies %>%
+  mutate(across(Code_1:Code_11, as.factor))
+
+#I noticed that our rows are not ordered in the same way and having the segments matched up row-wise is a pre-requisite to calculate kappa. So let's fix it by arranging our dataframes by Participant_ID in ascending order. 
+arielle_frequencies <- arielle_frequencies %>% 
+  arrange(Participant_ID)
+kade_frequencies <- kade_frequencies %>% 
+  arrange(Participant_ID)
+
+#To use the cohen.kappa() function, we need a 2-column dataframe where column 1 is one rater's codes and column 2 is the other rater's codes. We will do this process one at a time for each of the code categories, starting with Code 1 (Resistance to/fear of recovery)
+Code_1 <- cbind(Arielle = arielle_frequencies$Code_1,
+  Kade = kade_frequencies$Code_1)
+
+#FYI I'm not sure why cbind() seems to switch the 0s to 1s and the 1s to 2s, but it doesn't matter because it's consistent 
+View(Code_1)
+
+#Repeat making this new 2-column datadrames for each code category
+Code_2 <- cbind(Arielle = arielle_frequencies$Code_2,
+  Kade = kade_frequencies$Code_2)
+Code_3 <- cbind(Arielle = arielle_frequencies$Code_3,
+  Kade = kade_frequencies$Code_3)
+Code_4 <- cbind(Arielle = arielle_frequencies$Code_4,
+  Kade = kade_frequencies$Code_4)
+Code_5 <- cbind(Arielle = arielle_frequencies$Code_5,
+  Kade = kade_frequencies$Code_5)
+Code_6 <- cbind(Arielle = arielle_frequencies$Code_6,
+  Kade = kade_frequencies$Code_6)
+Code_7 <- cbind(Arielle = arielle_frequencies$Code_7,
+  Kade = kade_frequencies$Code_7)
+Code_8 <- cbind(Arielle = arielle_frequencies$Code_8,
+  Kade = kade_frequencies$Code_8)
+Code_9 <- cbind(Arielle = arielle_frequencies$Code_9,
+  Kade = kade_frequencies$Code_9)
+Code_10 <- cbind(Arielle = arielle_frequencies$Code_10,
+  Kade = kade_frequencies$Code_10)
+Code_11 <- cbind(Arielle = arielle_frequencies$Code_11,
+  Kade = kade_frequencies$Code_11)
+```
+
+```{r calculate cohen's kappa for each code}
+#Now, we just pass the new dataframes through the cohen.kappa() function. I am specifically extracting the kappa estimate for each code (the function also produces things like confidence intervals that we can always come back to) so that they can be organized into a table
+kappa_1 <- cohen.kappa(Code_1)$kappa
+kappa_2 <- cohen.kappa(Code_2)$kappa
+kappa_3 <- cohen.kappa(Code_3)$kappa
+kappa_4 <- cohen.kappa(Code_4)$kappa
+kappa_5 <- cohen.kappa(Code_5)$kappa
+kappa_6 <- cohen.kappa(Code_6)$kappa
+kappa_7 <- cohen.kappa(Code_7)$kappa
+kappa_8 <- cohen.kappa(Code_8)$kappa
+kappa_9 <- cohen.kappa(Code_9)$kappa
+kappa_10 <- cohen.kappa(Code_10)$kappa
+kappa_11 <- cohen.kappa(Code_11)$kappa
+
+#Make a table with kappa rounded to 2 decimal places
+kappa_table <- tibble(
+  Code  = paste0("Code_", 1:11),
+  Kappa = round(c(kappa_1, kappa_2, kappa_3, kappa_4, kappa_5, 
+            kappa_6, kappa_7, kappa_8, kappa_9, kappa_10, kappa_11), 2))
+kappa_table
+```
+
+```{r pull conflicting segments}
+#To make resolving discrepancies easier, I want R to tell me where there was a mismatch in how we rated things
+
+#A very simple way to do this is to have R just pull the row number
+mismatch_1 <- which( #Step 2: Have R pull the row numbers with TRUE
+  arielle_frequencies$Code_1 != kade_frequencies$Code_1) #Step 1: make a logical vector where TRUE indicates mismatch
+
+#View row numbers
+mismatch_1
+
+#Something that is a little more code but that may make our lives easier later (since our row ordering seems a little messed up in Google Sheets) is actually having R pull the Participant_ID numbers associated with the mismatched rows
+
+mismatch_1_IDs <- arielle_frequencies$Participant_ID[mismatch_1] #This indexes the Participant_IDs in the specified rows
+
+#View Participant_IDs
+mismatch_1_IDs
+
+#Repeat this process (skipping viewing the row numbers since they may not be reliable) for all of the code categories - codes with no mismatch will be returned as character(0)
+mismatch_2 <- which(arielle_frequencies$Code_2 != kade_frequencies$Code_2) 
+mismatch_2_IDs <- arielle_frequencies$Participant_ID[mismatch_2]
+mismatch_2_IDs
+
+mismatch_3 <- which(arielle_frequencies$Code_3 != kade_frequencies$Code_3) 
+mismatch_3_IDs <- arielle_frequencies$Participant_ID[mismatch_3]
+mismatch_3_IDs
+
+mismatch_4 <- which(arielle_frequencies$Code_4 != kade_frequencies$Code_4) 
+mismatch_4_IDs <- arielle_frequencies$Participant_ID[mismatch_4]
+mismatch_4_IDs
+
+mismatch_5 <- which(arielle_frequencies$Code_5 != kade_frequencies$Code_5) 
+mismatch_5_IDs <- arielle_frequencies$Participant_ID[mismatch_5]
+mismatch_5_IDs
+
+mismatch_6 <- which(arielle_frequencies$Code_6 != kade_frequencies$Code_6) 
+mismatch_6_IDs <- arielle_frequencies$Participant_ID[mismatch_6]
+mismatch_6_IDs
+
+mismatch_7 <- which(arielle_frequencies$Code_7 != kade_frequencies$Code_7) 
+mismatch_7_IDs <- arielle_frequencies$Participant_ID[mismatch_7]
+mismatch_7_IDs
+
+mismatch_8 <- which(arielle_frequencies$Code_8 != kade_frequencies$Code_8) 
+mismatch_8_IDs <- arielle_frequencies$Participant_ID[mismatch_8]
+mismatch_8_IDs
+
+mismatch_9 <- which(arielle_frequencies$Code_9 != kade_frequencies$Code_9) 
+mismatch_9_IDs <- arielle_frequencies$Participant_ID[mismatch_9]
+mismatch_9_IDs
+
+mismatch_10 <- which(arielle_frequencies$Code_10 != kade_frequencies$Code_10) 
+mismatch_10_IDs <- arielle_frequencies$Participant_ID[mismatch_10]
+mismatch_10_IDs
+
+mismatch_11 <- which(arielle_frequencies$Code_11 != kade_frequencies$Code_11) 
+mismatch_11_IDs <- arielle_frequencies$Participant_ID[mismatch_11]
+mismatch_11_IDs
+```
