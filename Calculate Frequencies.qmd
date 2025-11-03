@@ -1,0 +1,64 @@
+---
+title: "Calculate Frequencies"
+format: pdf
+editor: visual
+---
+
+```{r load packages}
+if(!require(readr)){install.packages('readr')}
+library(readr)
+if(!require(tidyverse)){install.packages('tidyverse')}
+library(tidyverse) 
+```
+
+```{r set working directory}
+#Arielle's working directory
+setwd("/Users/pmt4073/Desktop/LSMH/R Scripts/LGBTQ ED Treatment Barriers") #this is how you set the working directory in a basic R script
+
+#Kade's working directory
+
+getwd()
+```
+
+
+```{r import and format data}
+combined_frequencies <- read_csv("Data/combined_frequencies.csv", col_types = cols(.default = "c"))
+
+combined_frequencies <- combined_frequencies %>%
+  mutate(across(Code_1:Code_11, as.numeric))
+```
+
+```{r count number of barriers endorsed per participant}
+combined_frequencies <- combined_frequencies %>%
+  rowwise() %>%
+  mutate(barrier_count = sum(c_across(Code_1:Code_11), na.rm = TRUE)) %>%
+  ungroup()
+
+#Calculate mean and standard deviation of new barrier_count variable
+```
+
+```{r count frequnecy of each code endorsed}
+npercent_each_barrier <- combined_frequencies %>%
+  summarise(
+    across(starts_with("Code_"),
+           list(
+             count = ~sum(. == 1),
+             percent = ~sum(. == 1) / nrow(combined_frequencies) * 100
+           )))
+```
+
+```{r demographics}
+
+#Example:
+all_data %>% #dataframe
+  count(dem_ethnicity) %>% #the demographics variable
+  mutate(percent = (n / sum(n))*100)
+```
+
+```{r contingency tables}
+
+```
+
+```{r}
+#Consider something like a correlation heatmap to see which codes are combined the most
+```
