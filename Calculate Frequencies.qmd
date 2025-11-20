@@ -9,6 +9,8 @@ if(!require(readr)){install.packages('readr')}
 library(readr)
 if(!require(tidyverse)){install.packages('tidyverse')}
 library(tidyverse) 
+if(!require(car)){install.packages('car')}
+library(car) 
 ```
 
 ```{r set working directory}
@@ -90,10 +92,27 @@ combined_frequencies <- combined_frequencies %>%
   ungroup()
 
 #Calculate mean and standard deviation of new barrier_count variable
+combined_frequencies %>% 
+  summarize(mean(barrier_count), 
+            sd(barrier_count))
+
+combined_frequencies %>% 
+  group_by(gender_group) %>% 
+  summarize(mean(barrier_count), 
+            sd(barrier_count))
 ```
 
 ```{r count frequnecy of each code endorsed}
 npercent_each_barrier <- combined_frequencies %>%
+  summarise(
+    across(starts_with("Code_"),
+           list(
+             count = ~sum(. == 1),
+             percent = ~sum(. == 1) / nrow(combined_frequencies) * 100
+           )))
+
+npercent_each_barrier_grouped <- combined_frequencies %>%
+  group_by(gender_group) %>% 
   summarise(
     across(starts_with("Code_"),
            list(
@@ -112,9 +131,50 @@ all_data %>% #dataframe
   mutate(percent = (n / sum(n))*100)
 ```
 
-```{r contingency tables}
+```{r contingency tables and test for differences}
+code1_table <- table(
+  response = combined_frequencies$Code_1,
+  gender_group = combined_frequencies$gender_group
+)
+chisq.test(code1_table)$expected < 5
+chisq.test(code1_table)$expected
+code1_test <- chisq.test(code1_table)
+code1_test
 
+
+code2_table <- table(
+  response = combined_frequencies$Code_2,
+  gender_group = combined_frequencies$gender_group
+)
+chisq.test(code2_table)$expected
+chisq.test(code1_table)$expected < 5
+#Violation - cannot do chi square
+code2_test <- fisher.test(code2_table)
+code2_test
 ```
+```{r BH correction}
+p_values <- data.frame(
+  code = c("code1", "code2"....),
+  p_value = c(
+    code1_test$p.value,
+    code2_test$p.value,
+    ....
+  ))
+
+p_values$p_adjusted <- p.adjust(chi_pvals$p_value, method = "BH")
+p_values
+```
+
+```{r independent t test}
+#First levene's test to see if we should do student's or welch's 
+leveneTest(barrier_count ~ gender_group, data = combined_frequencies)
+#No significant difference between variance, so can use student's (var.equal = T)
+
+t.test(barrier_count ~ gender_group,
+  data = combined_frequencies,
+  var.equal = TRUE)
+```
+
 
 ```{r}
 #Consider something like a correlation heatmap to see which codes are combined the most
