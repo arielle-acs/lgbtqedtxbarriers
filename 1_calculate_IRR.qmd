@@ -151,11 +151,11 @@ mismatch_9 <- which(arielle_frequencies$Code_9 != kade_frequencies$Code_9)
 mismatch_9_IDs <- arielle_frequencies$Participant_ID[mismatch_9]
 mismatch_9_IDs
 
-mismatch_10 <- which(arielle_frequencies$Code_10 != kade_frequencies$Code_10) 
+mismatch_10 <- which(arielle_frequencies$Code_10 != kade_frequencies$Code_10)
 mismatch_10_IDs <- arielle_frequencies$Participant_ID[mismatch_10]
 mismatch_10_IDs
 
-mismatch_11 <- which(arielle_frequencies$Code_11 != kade_frequencies$Code_11) 
+mismatch_11 <- which(arielle_frequencies$Code_11 != kade_frequencies$Code_11)
 mismatch_11_IDs <- arielle_frequencies$Participant_ID[mismatch_11]
 mismatch_11_IDs
 ```

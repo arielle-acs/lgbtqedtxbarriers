@@ -1,0 +1,172 @@
+---
+title: "Clean Data and Collect Demographics"
+format: html
+---
+
+```{r load packages}
+if(!require(readr)){install.packages('readr')}
+library(readr)
+if(!require(tidyverse)){install.packages('tidyverse')}
+library(tidyverse) 
+```
+
+```{r set working directory}
+#Arielle's working directory
+setwd("/Users/pmt4073/Desktop/LSMH/R Scripts/LGBTQ ED Treatment Barriers") #this is how you set the working directory in a basic R script
+
+#Kade's working directory
+
+getwd() #this checks that the working directory was set correctly
+```
+
+```{r import and clean data}
+#We first need to combine the baseline demographics data we collected for the RCT with the qualitative coding we completed for this study.
+
+#Read in each data file
+combined_frequencies <- read_csv("Data/combined_frequencies.csv", col_types = cols(.default = "c"))
+baseline_data <- read_csv("Data/all_data.csv", col_types = cols(.default = "c"))
+
+#Merge baseline data with qualitative coding coding 
+demographics_and_codes <- combined_frequencies %>%
+  left_join(baseline_data, by = "Participant_ID") %>% 
+  select(-"...1") #not sure what this is so dropping it
+
+#For reference, this is the code used to make gender_group previously for the RCT:
+#gender_cols <- missingness_handled %>% 
+#  dplyr::select(starts_with("b_dem_gender_")) %>% 
+#  names()
+#cis_cols   <- c("b_dem_gender_1", "b_dem_gender_2")
+#trans_cols <- setdiff(gender_cols, cis_cols)
+#missingness_handled <- missingness_handled %>%
+#  mutate(
+#    gender_group = case_when(
+#      if_any(all_of(trans_cols), ~ .x == 1) ~ "trans", #adds trans label if any trans categories selected
+#      if_any(all_of(cis_cols), ~ .x == 1) ~ "cis")) #adds cis label if a cis category was selected and if no trans label was applied above
+
+#Make necessary variables factors
+demographics_and_codes <- demographics_and_codes %>% 
+  mutate(
+    across(
+      c(
+        starts_with("b_dem_sexuality"), 
+        starts_with("b_dem_sex"), 
+        starts_with("b_current"), 
+        starts_with("b_past"), 
+        starts_with("b_unmet"), 
+        starts_with("b_dem_gender"), 
+        starts_with("b_dem_race"),
+        starts_with("gender_group")
+      ),
+      as.factor
+    )
+  )
+
+#Make all necessary variables numeric
+demographics_and_codes <- demographics_and_codes %>%
+  mutate(
+    across(
+      c(
+        Code_1:Code_11, 
+        starts_with("b_dem_age"), 
+        starts_with("b_edeq"),
+        starts_with("b_hunger")
+      ),
+      as.numeric
+    )
+  )
+
+#Add baseline EDEQ means
+demographics_and_codes <- demographics_and_codes %>%
+  mutate(
+    b_edeq_dietary_restraint = (b_edeq_1 + b_edeq_2 + b_edeq_3) / 3,
+    b_edeq_preoccupation_eatingconcern = (b_edeq_4 + b_edeq_5 + b_edeq_6) / 3,
+    b_edeq_overvaluation = (b_edeq_7 + b_edeq_8 + b_edeq_9 + b_edeq_10) / 4,
+    b_edeq_global = (b_edeq_dietary_restraint + b_edeq_preoccupation_eatingconcern + b_edeq_overvaluation) / 3
+  )
+
+#Save the demographics_and_codes data for later use
+#write.csv(
+#  demographics_and_codes,
+#  file = file.path("Data", "demographics_and_codes.csv"),
+#  row.names = FALSE
+#)
+```
+
+```{r demographics}
+#Sexuality
+demographics_and_codes %>% 
+  count(b_dem_sexuality) %>% 
+    mutate(percent = (n / sum(n))*100)
+#1:Straight/Heterosexual; 2:Gay/Lesbian/Homosexual; 3:Bisexual; 4:Pansexual; 5:Queer; 6:Asexual; 7:Other (please specify):; 8:Unsure/Questioning; 9:I do not use a label; 10:I do not want to respond
+
+#Gender group (cis; trans)
+demographics_and_codes %>% 
+  count(gender_group) %>% 
+    mutate(percent = (n / sum(n))*100)
+#Using the code below, we can change the labels using the forcats package if desired
+#library(forcats) - put in load packages chunk if we use
+#gender_group <- gender_group %>%
+#  fct_recode(
+#  PLACEHOLDER1 = "cis",
+#  PLACEHOLDER2 = "trans"
+#  )
+
+#Detailed gender
+demographics_and_codes %>%
+  select(starts_with("b_dem_gender")) %>% 
+  summarize(across(everything(), 
+                   list(n = ~ sum(. == 1),
+                        percent = ~ mean(. == 1) * 100)))
+#1:Man/Boy; 2:Woman/Girl; 3:Transgender; 4:Female to male transgender/FTM; 5:Male to female transgender/MTF; 6:Trans male/Trans masculine; 7:Trans female/Trans feminine; 8:Genderqueer; 9:Gender expansive; 10:Androgynous; 11:Nonbinary; 12:Two-spirited; 13:Third gender; 14:Agender; 15:Not sure; 16:Other (please specify):
+
+#Sex assigned at birth
+demographics_and_codes %>% 
+  count(b_dem_sex) %>% 
+    mutate(percent = (n / sum(n))*100)
+#1:Male; 2:Female; 3:Intersex
+
+#Race/ethnicity
+demographics_and_codes %>%
+  select(starts_with("b_dem_race")) %>% 
+  summarize(across(everything(), 
+                   list(n = ~ sum(. == 1),
+                        percent = ~ mean(. == 1) * 100)))
+#0: N/A; 1:American Indian or Alaska Native; 2:Asian (including Asian Desi); 3:Black/African American; 4:Hispanic/Latinx/Latine; 5:Native Hawaiian or other Pacific Islander; 6:White/Caucasian (non-Hispanic; includes Middle Eastern); 7:Other (please specify):; 8:Prefer not to answer
+
+#Current ED treatment
+demographics_and_codes %>% 
+  count(b_current_ed) %>% 
+    mutate(percent = (n / sum(n))*100)
+#0: No; 1: Yes
+
+#Past ED treatment
+demographics_and_codes %>% 
+  count(b_past_ed) %>% 
+    mutate(percent = (n / sum(n))*100)
+#Only displayed if b_current_ed is "No", so many NAs
+#0: No; 1: Yes
+
+#Baseline EDEQ score
+edeq_descriptives <- demographics_and_codes %>%
+  summarize(across(c(b_edeq_global, b_edeq_dietary_restraint, b_edeq_preoccupation_eatingconcern, b_edeq_overvaluation),  
+                   list(mean = mean,  sd = sd)))
+print(edeq_descriptives)
+#EDEQ scores range from 0 to 6; a common cutoff for clinical severity is 2.8.
+
+#Check EDEQ internal consistency
+edeq_df <- demographics_and_codes %>%
+select(b_edeq_1:b_edeq_10)
+ltm::cronbach.alpha(edeq_df)
+
+#Food insecurity
+demographics_and_codes %>%
+  mutate(b_food_insecure = if_else(b_hunger_1 >= 2 | b_hunger_2 >= 2, 1, 0)) %>% 
+  count(b_food_insecure) %>% 
+  mutate(percent = (n / sum(n))*100)
+#0: No; 1: Yes
+
+#Age
+demographics_and_codes %>% 
+  summarize(mean = mean(b_dem_age, na.rm = TRUE),
+            sd = sd(b_dem_age, na.rm = TRUE))
+```
