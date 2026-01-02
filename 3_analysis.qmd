@@ -1,0 +1,345 @@
+---
+title: "Analysis"
+format: html
+---
+
+```{r load packages}
+if(!require(readr)){install.packages('readr')}
+library(readr)
+if(!require(tidyverse)){install.packages('tidyverse')}
+library(tidyverse) 
+if(!require(car)){install.packages('car')}
+library(car) 
+```
+
+```{r set working directory}
+#Arielle's working directory
+setwd("/Users/pmt4073/Desktop/LSMH/R Scripts/LGBTQ ED Treatment Barriers") #this is how you set the working directory in a basic R script
+
+#Kade's working directory
+
+getwd() #this checks that the working directory was set correctly
+```
+
+```{r import data}
+demographics_and_codes <- read_csv("Data/demographics_and_codes.csv", col_types = cols(.default = "c"))
+
+#Make necessary variables factors
+demographics_and_codes <- demographics_and_codes %>% 
+  mutate(
+    across(
+      c(
+        starts_with("b_dem_sexuality"), 
+        starts_with("b_dem_sex"), 
+        starts_with("b_current"), 
+        starts_with("b_past"), 
+        starts_with("b_unmet"), 
+        starts_with("b_dem_gender"), 
+        starts_with("b_dem_race"),
+        starts_with("gender_group")
+      ),
+      as.factor
+    )
+  )
+
+#Make all necessary variables numeric
+demographics_and_codes <- demographics_and_codes %>%
+  mutate(
+    across(
+      c(
+        Code_1:Code_11, 
+        starts_with("b_dem_age"), 
+        starts_with("b_edeq"),
+        starts_with("b_hunger")
+      ),
+      as.numeric
+    )
+  )
+```
+
+```{r count total number of barriers endorsed per participant}
+#Create a new variable that sums the number of codes endorsed in each row (aka for each participant)
+demographics_and_codes <- demographics_and_codes %>%
+  rowwise() %>% #Mutate works columnwise by default, so need to specify that each row should be treated as its own group for these operations
+  mutate(barrier_count = sum(c_across(Code_1:Code_11), na.rm = TRUE)) %>% #Creates the new variable 
+  ungroup() #Revert to typical columnwise format
+
+#Calculate mean and standard deviation of the new barrier_count variable for overall sample
+demographics_and_codes %>% 
+  summarize(mean(barrier_count), 
+            sd(barrier_count))
+
+#Calculate mean and standard deviation of the new barrier_count variable by gender group
+demographics_and_codes %>% 
+  group_by(gender_group) %>% 
+  summarize(mean(barrier_count), 
+            sd(barrier_count))
+```
+
+```{r independent t-test for total number of barriers}
+#Now that we have the total number of barriers endorsed for each participant, we can check if there is a significant difference between the gender groups
+
+#First do Levene's test to see if we should do student's or welch's independent t-test
+leveneTest(barrier_count ~ gender_group, data = demographics_and_codes)
+#No significant difference between variance, so can use student's (var.equal = T)
+
+t.test(barrier_count ~ gender_group,
+  data = demographics_and_codes,
+  var.equal = TRUE)
+#No significant difference (makes sense because we were ultimately strict about not assigning more than 3 codes per person, so not a lot of room for variation in total number)
+```
+
+```{r count frequnecy of each code endorsed}
+#In addtion to the total number of codes endorsed by each participant, we want to see how many participants endorsed each individual code
+
+#This computes the N and percent for the overall sample
+npercent_each_barrier <- demographics_and_codes %>%
+  summarise(
+    across(starts_with("Code_"),
+           list(
+             count = ~sum(. == 1),
+             percent = ~sum(. == 1) / nrow(demographics_and_codes) * 100
+           )))
+
+#This computes the N and percent by gender group (which matters for the tests below)
+npercent_each_barrier_grouped <- demographics_and_codes %>%
+  group_by(gender_group) %>% 
+  summarise(
+    across(starts_with("Code_"),
+           list(
+             count = ~sum(. == 1),
+             percent = ~sum(. == 1) / nrow(demographics_and_codes) * 100
+           )))
+```
+
+```{r contingency tables and test for differences}
+#For each code, we want to check if there are significant differences in the number of trans youth who endorsed it and the number of cis youth who endorsed it. We would ideally do chi-square tests to investigate, but since our sample is small, an important chi-square assumption may be violated. So we need to check the assumption, and if it is violated, we will do a fisher's test instead. In summary:
+#Step 1 = Create a contingency table to display the observed frequencies
+#Step 2 = Derive the expected values and see if any are less than 5 (this would violate an assumption)
+#Step 3a = If the assumption is not violated, conduct a chi-square test
+#Step 3b = If the assumption is violated, conduct a fisher's test
+
+#Code 1 
+
+##Step 1
+code1_table <- table(
+  response = demographics_and_codes$Code_1,
+  gender_group = demographics_and_codes$gender_group
+)
+code1_table 
+
+##Step 2
+chisq.test(code1_table)$expected < 5 
+#Assumption passed
+
+##Step 3a
+code1_test <- chisq.test(code1_table)
+code1_test
+#Not significant aka no association found between gender group and code endorsement
+
+#Code 2
+
+##Step 1
+code2_table <- table(
+  response = demographics_and_codes$Code_2,
+  gender_group = demographics_and_codes$gender_group
+)
+code2_table 
+
+##Step 2
+chisq.test(code2_table)$expected < 5 
+#Assumption failed
+
+##Step 3b
+code2_test <- fisher.test(code2_table)
+code2_test
+#Not significant
+
+#Code 3
+
+##Step 1
+code3_table <- table(
+  response = demographics_and_codes$Code_3,
+  gender_group = demographics_and_codes$gender_group
+)
+code3_table 
+
+##Step 2
+chisq.test(code3_table)$expected < 5 
+#Assumption passed
+
+##Step 3a
+code3_test <- chisq.test(code3_table)
+code3_test
+#Not significant
+
+#Code 4
+
+##Step 1
+code4_table <- table(
+  response = demographics_and_codes$Code_4,
+  gender_group = demographics_and_codes$gender_group
+)
+code4_table 
+
+##Step 2
+chisq.test(code4_table)$expected < 5 
+#Assumption failed
+
+##Step 3b
+code4_test <- fisher.test(code4_table)
+code4_test
+#Significant aka there is an association between gender group and code endorsement (which makes a lot of sense because this the code about lack of gender affirming care). 
+
+#Code 5
+
+##Step 1
+code5_table <- table(
+  response = demographics_and_codes$Code_5,
+  gender_group = demographics_and_codes$gender_group
+)
+code5_table 
+
+##Step 2
+chisq.test(code5_table)$expected < 5 
+#Assumption passed
+
+##Step 3a
+code5_test <- chisq.test(code5_table)
+code5_test
+#Not significant
+
+#Code 6
+
+##Step 1
+code6_table <- table(
+  response = demographics_and_codes$Code_6,
+  gender_group = demographics_and_codes$gender_group
+)
+code6_table 
+
+##Step 2
+chisq.test(code6_table)$expected < 5 
+#Assumption passed
+
+##Step 3a
+code6_test <- chisq.test(code6_table)
+code6_test
+#Not significant
+
+#Code 7
+
+##Step 1
+code7_table <- table(
+  response = demographics_and_codes$Code_7,
+  gender_group = demographics_and_codes$gender_group
+)
+code7_table 
+
+##Step 2
+chisq.test(code7_table)$expected < 5 
+#Assumption passed
+
+##Step 3a
+code7_test <- chisq.test(code7_table)
+code7_test
+#Not significant
+
+#Code 8
+
+##Step 1
+code8_table <- table(
+  response = demographics_and_codes$Code_8,
+  gender_group = demographics_and_codes$gender_group
+)
+code8_table 
+
+##Step 2
+chisq.test(code8_table)$expected < 5 
+#Assumption passed
+
+##Step 3a
+code8_test <- chisq.test(code8_table)
+code8_test
+#Not significant
+
+#Code 9
+
+##Step 1
+code9_table <- table(
+  response = demographics_and_codes$Code_9,
+  gender_group = demographics_and_codes$gender_group
+)
+code9_table 
+
+##Step 2
+chisq.test(code9_table)$expected < 5 
+#Assumption passed
+
+##Step 3a
+code9_test <- chisq.test(code9_table)
+code9_test
+#Not significant
+
+#Code 10
+
+##Step 1
+code10_table <- table(
+  response = demographics_and_codes$Code_10,
+  gender_group = demographics_and_codes$gender_group
+)
+code10_table 
+
+##Step 2
+chisq.test(code10_table)$expected < 5 
+#Assumption failed
+
+##Step 3b
+code10_test <- fisher.test(code10_table)
+code10_test
+#Not significant
+
+#Code 11
+
+##Step 1
+code11_table <- table(
+  response = demographics_and_codes$Code_11,
+  gender_group = demographics_and_codes$gender_group
+)
+code11_table 
+
+##Step 2
+chisq.test(code11_table)$expected < 5 
+#Assumption passed
+
+##Step 3a
+code11_test <- chisq.test(code11_table)
+code11_test
+#Not significant
+```
+
+```{r BH correction}
+#Only endorsement of Code 4 demonstrated a significant relation to gender group. Since we did many exploratory tests, we need to check if the p value for Code 4 remains significant after making a correction for multiple tests.
+
+#First, extract all of the p-values into a new df
+p_values <- data.frame(
+  code = c("code1", "code2", "code3","code4", "code5", "code6", "code7", "code8", "code9", "code10", "code11"),
+  p_value = c(
+    code1_test$p.value,
+    code2_test$p.value,
+    code3_test$p.value,
+    code4_test$p.value,
+    code5_test$p.value,
+    code6_test$p.value,
+    code7_test$p.value,
+    code8_test$p.value,
+    code9_test$p.value,
+    code10_test$p.value,
+    code11_test$p.value
+  ))
+
+#Now, make the Benjamini-Hochberg correction in a new column p_adjusted
+p_values$p_adjusted <- p.adjust(p_values$p_value, method = "BH")
+p_values
+#The only p-value that was significant prior to correction was Code 4, and it is no longer significant
+```
