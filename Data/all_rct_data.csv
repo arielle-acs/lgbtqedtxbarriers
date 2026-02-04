@@ -1,0 +1,224 @@
+,Participant_ID,gender_group,b_current_ed,b_past_ed,b_unmet_ed_now,b_unmet_ed_free_1,b_unmet_ed_past,b_unmet_ed_free_2,b_hunger_1,b_hunger_2,b_dem_sexuality,b_dem_age,b_dem_sex,b_dem_gender_1,b_dem_gender_2,b_dem_gender_3,b_dem_gender_8,b_dem_gender_4,b_dem_gender_15,b_dem_gender_NA,b_dem_gender_11,b_dem_gender_12,b_dem_gender_5,b_dem_gender_6,b_dem_gender_10,b_dem_gender_14,b_dem_gender_9,b_dem_gender_16,b_dem_gender_7,b_dem_gender_13,b_dem_race_ethnicity_3,b_dem_race_ethnicity_2,b_dem_race_ethnicity_1,b_dem_race_ethnicity_5,b_dem_race_ethnicity_6,b_dem_race_ethnicity_4,b_dem_race_ethnicity_NA,b_dem_race_ethnicity_7,b_dem_race_ethnicity_8,b_edeq_1,b_edeq_2,b_edeq_3,b_edeq_4,b_edeq_5,b_edeq_6,b_edeq_7,b_edeq_8,b_edeq_9,b_edeq_10
+1,40077,trans,0,0,0,NA,0,NA,1,1,3,16,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,0
+2,15186,cis,0,1,0,NA,0,NA,2,2,2,13,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,3,4,5,4
+3,11697,cis,0,0,0,NA,0,NA,3,3,2,16,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,1,0,1,4,0,4,4
+4,95674,cis,0,0,0,NA,0,NA,2,2,2,16,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,1,1,1,4,4,0,0
+5,40889,trans,0,0,0,NA,0,NA,3,2,2,15,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,2,3,2,6,3,3,4,6,6,6
+6,84608,trans,0,0,1,I feel that people around me won't be able to understand my problems.,NA,NA,1,1,8,17,2,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,3,4,5,1,3,2,6,2,6,6
+7,61437,cis,0,0,0,NA,0,NA,3,2,2,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,6,6
+8,16432,cis,1,NA,1,Shame and Stigma: Feelings of shame or embarrassment about having an eating disorder or body image issues can prevent individuals from seeking help. The stigma attached to these conditions can make it hard to talk about or acknowledge.,NA,NA,2,2,2,15,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,2,2,3,2,3,2,5,3,3
+9,22485,cis,0,1,1,I don’t want to get fat.,NA,NA,1,1,2,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,6,6,6,6,6,6,6,4,4
+10,24378,cis,1,NA,0,NA,0,NA,3,3,2,15,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,2,1,0,0,0,6,4,2,2
+11,21140,cis,0,0,0,NA,1,Distance and money,2,2,2,15,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,3,2,4,2,3,4,5,5,5
+12,58776,cis,1,NA,0,NA,0,NA,2,2,2,15,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,2,2,3,1,2,2,3,4,2,4
+13,13649,cis,1,NA,0,NA,0,NA,1,1,4,13,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,1,1,1,4,4,4,4
+14,83679,cis,0,1,0,NA,0,NA,1,1,4,15,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,2,1,0,2,1,4,4,4,4
+15,62516,cis,0,0,0,NA,0,NA,2,2,2,17,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,3,4,1,4,3,4,2,4,4,2
+16,52326,trans,0,0,1,i’m afraid to talk about it and because of my depression i have no energy or motivation to change my lifestyle,NA,NA,1,1,3,17,2,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,1,2,3,4,2,5,3
+17,20457,cis,0,0,0,NA,0,NA,1,1,2,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,6,5,5,3,3,6,4,2,5,4
+18,39455,trans,0,0,1,Communication issues,NA,NA,1,1,2,17,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,6,0,2,1,3,2,4,1,6
+19,64886,cis,0,0,1,My therapist just isn't enough,NA,NA,2,1,2,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,4,2,4,3,4,6,6,5,6
+20,35756,cis,0,0,0,NA,1,"The last question said ""need"" not ""want."" I didn't get support because I didn't want it to stop",1,1,2,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,2,1,1,6,3,6
+21,65322,trans,0,0,1,I’m too young to get top surgery which is my ultimate goal so for now I just have to live with extreme discomfort with my chest until I’m old enough and can save up enough. I also have a lot of trouble with food and eating that I think may be something like ARFID.,NA,NA,1,1,4,17,2,0,0,0,1,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,1,1,4,3,4,5
+22,86883,trans,1,NA,1,I’m embarrassed about it. I feel like I shouldn’t be too concerned with it.,NA,NA,2,1,4,17,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,5,4,4,6,6,6,5,6,6,6
+23,72424,trans,0,0,0,NA,1,Fear of judgment probably,1,1,3,17,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,4,4,4,6
+24,33504,cis,0,0,0,NA,0,NA,1,1,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,2,2,0,2,2
+25,38713,cis,1,NA,1,"Judgement, fear of losing control, vulnerability.",NA,NA,2,3,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,6,6,6,6,6,6,5,6,6
+26,96986,cis,0,0,1,Haven't disclosed such problems,NA,NA,1,1,2,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,3,2,0,4,4
+27,28301,trans,0,0,1,"Money, scheduling, parents that don't believe in it",NA,NA,2,2,4,17,2,0,0,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,2,2,1,6
+28,14617,trans,0,0,1,Not being taken seriously,NA,NA,1,1,2,17,2,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,2,0,1,1,4,2,6,4,4
+29,14806,trans,0,0,1,"I'm scared to tell my family or friends, they'll either send me to a hospital or tell me that I'm beautiful just the way I am and to deal with it",NA,NA,1,2,2,17,2,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,2,3,0,1,1,2,3,6,4,4
+30,93863,cis,0,0,1,"binge eating isn't taken super seriously, and too many people will try to take an ""intuitive eating"" approach when I actually really do need to lose weight",NA,NA,1,1,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,6,6,0,0,4,2,4,5,6
+31,13842,cis,0,0,1,"I know that technically I should seek help but it seems ridiculous to check myself into the hospital. So, embarrassment again.",NA,NA,1,1,3,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,5,6,6,0,2,2,4,2,2
+32,74139,trans,1,NA,1,I don't have access to support and I don't feel comfortable reaching out for help.,NA,NA,2,2,3,17,2,1,0,1,0,1,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6,0,5,6,6,6
+33,53775,trans,0,1,1,I'm too scared to ask for help because I have bad experiences with getting mental help.,NA,NA,1,1,3,17,2,1,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,6,6,1,6,6,6,6,6,6,4
+34,57712,trans,1,NA,0,NA,0,NA,2,2,3,16,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,6,6,6,6,6,6,6,0,6,6
+35,96120,trans,0,0,0,NA,1,no one really cared to much,1,1,3,16,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,5,5,4,0,0,2,6,4,6,0
+36,49399,cis,0,0,1,Scared to admit it,NA,NA,2,2,4,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,3,0,1,4,2,6,4
+37,45841,cis,1,NA,1,Feeling like people will judge me,NA,NA,1,1,2,15,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,4,4,2,5,4,5,4,6,6,6
+38,40397,cis,0,1,1,No time or money,NA,NA,1,1,2,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,3,3,3,2,6,1,2
+39,75164,cis,0,0,0,NA,1,NA,1,1,4,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,3,3,0,1,1,2,2,2,4,2
+40,71675,trans,0,0,1,"Fear of being socially/familialy rejected for my gender body charge needs. I’m also not under the eating disorder spectrum that wants to lose weight, in insecure about how skinny I currently am, so I’m afraid I won’t be taken seriously.",NA,NA,1,1,5,15,2,1,0,1,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,2,1,3,4,0,4,2,6,4
+41,30277,trans,0,0,1,money + resources,NA,NA,2,2,9,17,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,2,0,0,1,2,0,4,4,6,6
+42,58650,trans,0,0,0,NA,0,NA,1,1,1,17,2,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,3,3,2,2,1,3,1,4,5
+43,18169,trans,0,0,0,NA,0,NA,1,1,1,17,2,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,2,2,0,2
+44,41917,trans,0,0,1,"It feels kind of stupid to be fighting to get gender affirming surgeries and stuff, and then being like, ""well I also feel fat"". It's not all that logical",NA,NA,1,1,8,17,2,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,1,0,4,0,4,6
+45,50884,trans,0,0,1,my parents,NA,NA,2,2,4,15,2,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,2,1,0,0,4,6,4,6
+46,70371,trans,0,1,1,My therapist doesn't really ask about my body issues and I don't have the ability to bring them up,NA,NA,1,1,7,17,2,0,0,1,1,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,0,1,0,1,2,0,1,1,1,4,6,4,4
+47,48434,trans,0,0,1,I don't want to admit I have them.,NA,NA,1,1,2,17,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,3,6,2,2,2,1,6,0,4,2
+48,18974,trans,0,0,1,"I haven't found anybody yet who can understand gender dysphoria properly. Also, because I'm not skinny or overweight, nobody's ever thought anything could be wrong with the way I see myself.",NA,NA,1,1,4,16,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,6,0,4,2,1,6,4,6,6
+49,18856,trans,1,NA,1,It’s uncomfortable and my Psychiatrist keeps telling me to eat more food and telling me weight trends with numbers and it’s in my chart that I am uncomfortable with conversations like that. He has handled it with zero sensitivity and it’s made it so much worse. Also just I’m trans so body image problems are a given for me. Lots of dysphoria around my body that can’t be fixed without like medical procedures,NA,NA,1,1,9,17,2,1,0,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,0,0,3,3,4,4,6,2,6
+50,17231,cis,1,NA,0,NA,0,NA,1,1,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,1,1,1,2,5,5,6
+51,56049,trans,0,0,1,Fear,NA,NA,1,1,5,16,2,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,2,6,4,0,1,6,2,6,2,4
+52,68213,trans,0,0,0,NA,1,I feel like my parents prevented me from doing that along with my friends and family. Whenever I say I look “chubby” or “fat” or even “round” they say you’re skinny and you only weigh the amount you do because all the muscle you have. But in reality I still felt heavy and I just don’t feel comfy in my own skin sadly.,1,1,3,17,2,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,6,6,1,1,0,6,4,2,6,2
+53,93764,trans,0,0,0,NA,0,NA,1,1,5,16,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,3
+54,15333,trans,0,0,1,Are my body image issues real or a concern? Am I being rational?,NA,NA,1,1,2,17,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,2,0,1,3,0,5,6,4,6
+55,98726,trans,1,NA,0,NA,1,"The culture surrounding dieting made it unsafe to reach out for help, given that i started my eating disorder at a higher, heavier weight.",1,1,3,16,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,2,6,0,2
+56,80569,trans,0,0,0,NA,0,NA,1,1,2,17,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,1,1,0,0,2,2,2,2,2
+57,63962,trans,0,0,1,Also financially inaccessible and very few support specialists in the area,NA,NA,2,2,4,17,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,5,4,5,6,6,4,6,6,4,6
+58,66481,trans,0,0,1,My dysphoria because i’m trans,NA,NA,1,1,2,17,2,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,2,3,3,0,4,0,6,6
+59,40376,trans,1,NA,1,"Same as before, I don’t know how. I’ve had an eating disorder so long most people in my life assumed I just have a small appetite. Especially since a lot of my issues started from my ADHD medication, its a lot of work I think I just need to do for myself and no one can really help me with.",NA,NA,3,2,7,17,2,0,1,0,1,0,1,0,1,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,4,4,1,3,2,1,4,2,4,6
+60,83329,cis,0,0,0,NA,1,I was scared that I would be sent away or that my family would look at me weirdly,1,1,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,3,2,4,2,2,6,4,6,4,6
+61,90314,cis,0,0,0,NA,0,NA,1,1,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,2,0,2,4
+62,59978,cis,0,0,0,NA,1,Wasnt motivated enough,1,1,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,5,6,6,2,2,6,4,4
+63,66920,trans,0,0,0,NA,0,NA,1,1,6,17,2,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,4,0,6
+64,35067,trans,0,0,1,"i'm scared to open up about it because it's embarrassing, i don't think my therapist will understand because they are older than me",NA,NA,1,1,3,17,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6,1,1,1,1,1,6,2,6,4
+65,15025,trans,0,0,1,I don’t want the side-effects that come from support.,NA,NA,2,2,1,17,2,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,5,6,6,6,4,6,6,6,4,6
+66,77121,cis,0,1,1,"Same as my last response, my family knows i have problems with my bulimia but we sorta just ignore it as we don’t have the time or resources",NA,NA,3,3,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,4,3,3,6,5,6,4,2,6,6
+67,89229,trans,0,0,0,NA,1,I didn't want to tell my parents about it.,1,1,2,17,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,2,2,0,2
+68,82287,trans,0,0,0,NA,1,"Again, resources. It’s also shameful topic to discuss with other people when you don’t feel confident in yourself",2,1,3,17,2,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,6,6,6,1,1,0,4,0,4,0
+69,96711,cis,0,0,1,I am not comfortable getting in person help for it,NA,NA,1,1,4,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,3,4,3,3,4,5,1,2,4
+70,11308,trans,0,0,0,NA,1,I wasn’t sure that it was serious enough.,2,1,3,15,2,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,2,0,2,0,0,5,2,4,4,4
+71,53611,trans,1,NA,0,NA,1,NA,1,1,6,17,2,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,4,6,6,4
+72,57517,trans,0,0,0,NA,0,NA,1,1,3,17,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,0,0,1,0,0,4,1,3,5
+73,47321,cis,0,0,1,Same thing. My parents are under paid and can’t afford basic help for me.,NA,NA,3,3,4,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,6,6,6,6,6,6,6,6,6
+74,43097,trans,0,0,1,"Other mental health issues (depression, anxiety) are much more pressing in my day to day life, so I need to prioritize caring for those with my limited resources",NA,NA,2,1,5,17,2,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,3,3,1,1,1,5,5,3,4,5
+75,74462,trans,0,0,1,My parents and I'm not open about these problems.,NA,NA,2,1,3,16,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,1,3,3,3,6,6,6,6,4
+76,11290,cis,0,0,1,"I have a therapist, however, that is not her area of expertise. It is also difficult to open up about these topics because it’s something I haven’t struggled with in the past.",NA,NA,1,2,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,2,3,3,2,0,2,3,3,4
+77,49908,trans,0,0,1,I have not disclosed to my therapist that I am feeling this way for fear of being admitted into a hospital or being reassigned,NA,NA,2,1,7,17,2,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,5,4,3,6,6,3,6,4,6,6
+78,24314,trans,1,NA,1,it’s just scary,NA,NA,1,1,3,16,2,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,2,6,4,4
+79,69311,trans,0,1,0,NA,1,"I never truly opened up about it, and when I did it wasn’t taken very seriously. My problems were taken as normal teenager behavior.",1,1,9,17,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,2,6,0,2,3,6,4,6,6,6
+80,70500,cis,0,0,0,NA,1,"I don’t have an eating disorder, just body image issues, so I didn’t always feel like there was a need.",1,1,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,0,0,0,6,2,6,4
+81,49864,cis,0,0,0,NA,0,NA,2,1,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,6,4,6,2,3,0,6,2,4,6
+82,69898,trans,0,0,1,Money,NA,NA,2,1,7,16,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,2,0,4,4,6,3,4,4,6,6
+83,74951,trans,0,0,1,Parents,NA,NA,1,2,2,17,2,0,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,2,0,0,1,1,0,3,4,4,5
+84,38601,cis,0,0,0,NA,0,NA,1,1,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,3,4,0,2,4,4,6,6,5
+85,60126,cis,0,0,0,NA,0,NA,1,1,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,4,4,2,4
+86,26551,trans,0,0,1,"I have not opened up about my body image problems to a licensed therapist yet, and I'm afraid of losing control of the last thing I have control over: my food.",NA,NA,2,1,7,17,2,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,6,6,5,3,3,4,6,6,6,6
+87,58830,trans,0,0,1,"I feel embarrassed because it probably doesn’t seem like I have eating disorder but I binge eat so much, it makes me embarrassed yet I can’t stop myself from eating.",NA,NA,1,3,8,16,2,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,6,1,0,6,6,6,6,6,6,6
+88,21592,trans,0,1,1,Financials,NA,NA,1,1,4,17,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,2,2,6,6,5,2,2,4,2
+89,17149,trans,0,0,1,Fear of making it a bigger deal than it needs to be,NA,NA,1,1,3,17,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,1,2,2,2,2,1,4,2,4,6
+90,31067,trans,0,0,1,I don’t know how to tell people.,NA,NA,1,1,3,16,2,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,2,1,1,0,1,2,2,6,2,6
+91,39743,trans,0,0,1,"My family overlooks my feelings towards my body, tells me I’m confused, and/or I’ll grow out of it.",NA,NA,2,2,4,17,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,2,1,3,3,1,4,6,6,6
+92,71511,trans,0,1,1,I cannot receive support for eating disorder/body image problems in the form of HRT (Hormone Replacement Therapy) as I previously was due to health problems that caused a bad reaction.,NA,NA,1,1,8,15,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,2,2,4,4,5,4,2,2,2
+93,45789,trans,0,1,0,NA,1,parents and scared to talk about issue,1,1,2,16,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,5,4,2,4,3,6,5,0,2,6
+94,84417,trans,0,0,1,My parents,NA,NA,3,3,3,13,2,1,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,4,6,6,6,6,6,6,1,6,6
+95,56534,trans,0,0,0,NA,1,"I was not diagnosed with an eating disorder yet, family told me my body image problems were ""just a phase.""",1,1,3,15,2,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,6,6,6,6,6,0,6,0,4,6
+96,98233,cis,1,NA,0,NA,0,NA,1,1,2,15,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,2,5,4,5,4,1,2,5,2
+97,84267,cis,0,0,0,NA,0,NA,1,1,2,14,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,3,6,1,1,1,4,4,3,4
+98,68200,cis,0,0,0,NA,0,NA,1,2,2,15,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,4,2,1,5,1,6,6,4,4,1
+99,76371,cis,1,NA,0,NA,0,NA,3,2,2,14,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,6,6,6,6,4,6,6,3,4
+100,45565,cis,0,0,0,NA,0,NA,1,1,2,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,4,0,2,1,4,6,4,6,4,4
+101,48031,cis,0,0,0,NA,0,NA,1,1,2,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,5,0,4,4,5,3,3,3,1,0
+102,19978,cis,1,NA,0,NA,0,NA,3,2,3,17,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,5,5,4,5,5,2,4,4,4
+103,25987,cis,1,NA,0,NA,0,NA,2,1,2,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,1,2,5,5,5,2,3,1,3
+104,38488,cis,0,1,1,I don't know how to get it.,NA,NA,2,3,2,15,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,2,1,2,1,1,0,3,4,0,4
+105,25643,cis,0,0,1,NA,NA,NA,2,2,2,14,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,4,2,2,2,0,2,3,4,3,2
+106,86804,cis,1,NA,1,"Fear of judgment or stigma associated with seeking help for an eating disorder or body image problems.
+",NA,NA,2,2,2,15,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,2,2,1,2,1,2,3,3,2,2
+107,86300,trans,1,NA,0,NA,0,NA,1,1,5,16,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,1,2,2,2,1,2,2,0,1
+108,18348,cis,0,0,1,I don't know where or how to get support,NA,NA,2,1,8,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,3,0,0,0,0,3,4,5,6
+109,90947,cis,0,0,1,"I’ve opened up to my mom, brother, and one of my friends about it. when they found out they helped me into a state of recovery but I never went to a professional for it, and it didn’t last very long before relapse which they don’t know about. They were so worried for me before and I don’t want them too again. Im also extremely afraid of going to a professional. The thought of actually recovering (which I would need to gain weight), finding out what effects my Disorder has had on me health wise, makes me sick.",NA,NA,1,1,2,14,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6,6,6,6,5,6,5,5,4,6
+110,53863,cis,1,NA,1,Not sure how to tell people,NA,NA,1,1,2,15,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,4,6,6,6,6,6,6,6,2
+111,17032,trans,0,0,1,i havent told anyone about them because it physically hurts me to talk about it i dont know what to do,NA,NA,1,1,4,16,2,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,5,4,3,2,4,4,6,6,5,6
+112,60501,trans,1,NA,1,I’m too afraid to recover. I hate my body so much that I would feel out of control if I started recovery.,NA,NA,1,1,9,17,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,6,6,3,1,6,6,6,6,6
+113,27455,cis,0,0,1,i’m afraid to tell my parents about it.,NA,NA,1,1,3,15,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,4,6,6,4,3,3,6,6,6,6
+114,62781,trans,0,0,0,NA,0,NA,1,1,7,13,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,3,4,0,0,1,2,0,3,6
+115,88241,cis,1,NA,0,NA,0,NA,2,2,2,17,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,3,2,1,3,4,4,4,3,4,3
+116,55765,cis,0,0,1,I dont want to gain weight.,NA,NA,1,1,3,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,6,6,6,5,5,6,4,4,6,2
+117,39606,cis,1,NA,0,NA,0,NA,2,2,2,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,4,3,2,3,4,4,4,4,4,5
+118,66912,trans,0,0,0,NA,0,NA,1,1,8,15,2,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,4,0,2,4
+119,67236,trans,0,0,1,"I'm scared of going to another php or iop that takes my dignity, time, and life away. I went to recovery for depression but it was a center that included eds. I don't want to go back there. I always feel like I'm responsible for other's saftey",NA,NA,1,1,3,13,2,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,6,6,6,6,4,6,4,2,6,6
+120,11868,cis,0,0,1,"Fear that if I inform people of my struggles, I'll lose autonomy over my daily life.",NA,NA,1,1,3,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,6,6,6,4,5,6,6,6,6,6
+121,68267,trans,0,0,0,NA,1,people at school might judge me,1,1,3,16,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,2,2,2,2,1,4,4,4,2
+122,35553,trans,0,0,1,I don't want to recover right now and most treatment options involve parents or too much time.,NA,NA,1,1,3,17,2,1,0,1,0,1,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,6,6,6,4,1,6,2,5,5,6
+123,95389,cis,1,NA,1,"I am currently working with my care team to increase my support, but am unsure in which ways this will actually manifest as.",NA,NA,1,1,3,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,5,5,3,6,6,6,6,4,6,6
+124,80941,cis,0,0,1,I worry that my parents won’t listen to me or might react negatively if I do.,NA,NA,1,1,2,17,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,4,3,1,4,6,5,5,3,6,6
+125,15777,cis,1,NA,0,NA,1,I didn't have a therapist and now I do have one.,1,1,5,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,6,2,4,4,2,4,2,4,4
+126,53969,trans,0,0,1,i am embarrassed. i don’t want to divulge the disgusting parts of my brain and habits that i have to someone who hasn’t been there. and part of me is scared/doesn’t want to get better,NA,NA,1,1,2,17,2,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,3,3,4,3,1,3,2,5,4,6
+127,95004,cis,1,NA,1,Once again it would affect me in the future and I chose not to receive treatment.,NA,NA,1,1,2,16,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,5,3,4,1,0,1,6,5,5,6
+128,43258,trans,0,0,1,My inability to talk about my eating issues to my therapist due to shame and stigma around binge eating issues has kept me from receiving proper support for it.,NA,NA,1,1,3,16,2,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,2,3,4,6,6,6
+129,64019,cis,1,NA,1,Not sure,NA,NA,1,1,3,15,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,5,4,4,6,6,6,6,0,6,6
+130,99949,cis,0,0,0,NA,0,NA,NA,NA,2,15,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,5,6,6,5,5,6,0,6,6
+131,72626,trans,0,0,1,I’m scared of opening up to my parents and them seeing me as weak.,NA,NA,1,1,3,15,2,1,1,1,0,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,0,0,0,5,3,1,1,2,4,2,4,4,2
+132,47331,cis,0,0,1,"I've told my mom about it, but she doesn't take it seriously, and I don't know what else to do. I've tried diets and fasting and I can't ever succeed in any of it, I feel like my body’s health and look is rapidly declineing and I'm just helpless.",NA,NA,1,1,3,15,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,6,6,6,4,4,6,6,1,6,6
+133,50401,trans,0,0,1,"I am concerned about revealing the issues to my parents, and I don't know if they can afford the treatment.",NA,NA,1,1,2,16,2,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,4,3,4,3,3,4,5,4,4,2
+134,96007,cis,0,0,1,I haven't told any adults about it.,NA,NA,1,1,9,14,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,1,1,6,5,5,4,6,6,6
+135,65187,trans,0,0,1,Discomfort with parents and how they view mental health concerns,NA,NA,1,1,2,17,2,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,1,0,1,2,2,3
+136,31188,trans,0,0,1,"Sometimes, I think that I am just overreacting, or that I don't actually have any issues with eating or weight, but I sometimes feel that I don't deserve food. I asked my dad about it, and he said that he had noticed that I ate oddly. According to him, I would eat a lot of food one day, then refuse meals or accept them without eating them.
+
+When I went to my psychiatrist, I told the assistant not to let me see my weight. She agreed, but told me my weight in front of my mother. I felt a shameful pit in the bottom of my stomach. I had gained weight (105 to 107 lbs) and my mother laughed at my struggles, calling them unreasonable. It really hurt. (Sorry if this response is too long.)",NA,NA,1,1,8,17,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,1,1,2,6,2,6
+137,93980,trans,0,0,1,My parents don’t know I’m disordered and I’m afraid to tell them.,NA,NA,1,1,2,15,2,1,0,1,1,1,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,6,4,5,5,6,6,6,4,6,6
+138,76870,cis,0,0,1,"Money, time",NA,NA,2,1,4,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,6,6,5,5,6,5,6,4,6,6
+139,32309,trans,0,0,1,I don’t know where to go to get help.,NA,NA,2,1,9,16,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,1,1,3,4,0,4,6,5,4
+140,85411,cis,0,0,1,"I do not know who to tell for these body image issues. Even if I did, I still feel like this issue would continue.",NA,NA,1,1,2,13,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6,6,6,6,6,6,6,6,6,4
+141,85344,cis,0,0,1,My parents both agree that doctors won't do anything,NA,NA,2,2,9,16,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,5,6,6,6,6,4,6,4,5
+142,48970,cis,0,0,1,"Asking parents for help, and it comes and gos gradually",NA,NA,1,1,3,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6,5,5,0,0,2,4,5,5,5
+143,54988,trans,0,0,1,Cost and afraid,NA,NA,2,2,4,15,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,4,4,4,5,5,5,5
+144,49034,trans,0,0,1,Afraid and scare because of my conditions,NA,NA,2,2,5,16,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,5,4,4,4,4,3,5,5,5,5
+145,77719,trans,0,0,0,NA,0,NA,1,1,3,15,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,4,0,0,4
+146,78040,cis,0,0,0,NA,0,NA,1,1,9,14,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,2,1,0,0,0,4,5,6,4
+147,86763,trans,0,0,1,The problems are not consistent enough for me to warrent asking for help. The times I have reached out I have been told that it's just part of being a teenager.,NA,NA,1,1,5,17,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,2,6,3,1,0,3,4,0,2,6
+148,33280,trans,0,0,1,"I'm embarrassed they'll look at my body, and my parents will tell me to just eat",NA,NA,1,1,3,16,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,4,6,6,6,4,6,6,4,6,6
+149,23158,trans,0,0,1,I am really afraid to put my life on pause to receive treatment. I feel like my family would look at me different and I know my mom would feel bad/ blame herself.,NA,NA,1,1,9,16,2,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,6,5,6,6,6,5,6,6,6,6
+150,87771,cis,0,0,0,NA,0,NA,1,1,3,13,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6,6,6,6,6,6,6,5,6,6
+151,21842,trans,0,0,1,Fear to express my insecurities,NA,NA,1,1,2,15,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6,1,4,6,6,5,5,2,6,6
+152,19199,trans,1,NA,0,NA,1,Lack of my own openness.,1,1,3,16,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,2,4,6,6,6
+153,96320,cis,0,1,1,I'm on a waiting list for inpatient care.,NA,NA,1,1,3,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,6,6,6,6,5,6,5,3,6,3
+154,64719,trans,1,NA,1,"part of me doesn't want to get better, so it's difficult to commit to getting real help. the people around me don't understand what i go through so talking about it or expressing concern/wanting to get more help seems really difficult.",NA,NA,1,1,3,16,2,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,6,6,6,6,6,6,4,6,6
+155,78881,trans,0,0,1,Insurance,NA,NA,2,3,2,16,2,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,5,5,5,5,5,5,6,6,6,6
+156,49236,cis,0,0,0,NA,1,Courage,1,1,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,3,3,3,3,3,4,4,4,4,4
+157,26869,cis,0,0,1,"money problems, parent would probably be unwilling",NA,NA,1,1,5,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,5,2,4,4,3,4,5,1,4,4
+158,65509,cis,1,NA,1,I don’t want to stop,NA,NA,1,1,9,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,0,6,6,6,2,6,6,6,6
+159,38538,trans,0,1,1,Parents and lack of desire to get help,NA,NA,1,1,2,14,2,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,6,0,3,2,6,4,6,3,6
+160,73614,cis,1,NA,1,I never told anyone,NA,NA,1,1,2,13,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,4,6
+161,80888,trans,1,NA,1,My biological parents,NA,NA,3,2,2,16,2,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,6,6,4,3,6,6,1,6,6
+162,55845,cis,0,0,1,I don't feel comfortable telling people about it,NA,NA,1,1,3,13,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,3,3,0,0,3,4,6,6,6
+163,86114,trans,0,0,1,I don’t want to tell my parents about my struggles,NA,NA,2,1,2,16,2,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,3,4,5,4,4,4,2,4,2
+164,22584,cis,0,0,1,Feeling like my therapist will tell my parents and also not wanting to have people make me eat,NA,NA,1,1,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,6,6,6,5,5,4,6,2,6,6
+165,81514,cis,0,0,1,i don’t like to talk about it to my therapist,NA,NA,1,1,4,15,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,4,2,6,6,6,6,0,6,2
+166,92289,trans,0,0,1,My parents are pushing back the start of my therapy.,NA,NA,1,1,2,15,2,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,3,6,1,3,4,1,6,4,6,6
+167,86314,trans,0,0,1,Parental support and money. We buy a lot of instant foods and junk food. Healthy stuff doesn't last long enough.,NA,NA,2,3,2,17,2,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,3,0,5,3,2,1,4,4,6,6
+168,65863,trans,0,1,1,Currently do not have a pediatrician. Never received my dietitian referral.,NA,NA,3,3,2,14,2,0,0,1,1,1,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1,0,1,0,0,0,0,5,5,6,3,3,6,5,6,5,6
+169,77450,trans,0,1,0,NA,0,NA,1,1,4,16,2,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,1,2,1,0,6,6,4,6,6
+170,25638,trans,0,0,0,NA,0,NA,1,1,4,16,2,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,2,4,2,2
+171,88046,trans,0,0,1,"Inability to trust or talk to those around me, as I feel I will be judged or get in trouble.",NA,NA,1,1,3,17,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,3,3,3,6,6,6,6,6,6,6
+172,99374,trans,1,NA,1,I am stuck in a cycle that I fear I cannot break.,NA,NA,1,1,2,17,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,6,2,4,4,5,5,0,5,6
+173,13638,cis,0,0,1,"I don’t think it’s that serious, my symptoms don’t point to one disorder in particular, I can handle it on my own, my mom would ridicule me, this is more serious than depression and I might need medical help which I don’t want",NA,NA,1,1,2,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,3,3,5,6,4,5,2,0,4,0
+174,35047,trans,0,0,1,Im not sure if i really need help or if i'm being dramatic.,NA,NA,2,1,2,15,2,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,5,6,6,4,5,6,6,6,6,6
+175,38572,cis,0,1,1,I just don’t have time. And I always feel like I don’t look like I have an eating disorder so Mabey it’s all in my head. And my parents think I’m all better so they won’t send me back to my nutritionist,NA,NA,1,1,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,5,6,6,6,6,6,4,6,4
+176,26776,cis,0,0,1,It is overwhelming and generally scary to ask for support.,NA,NA,1,1,2,14,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,5,6,6,5,4,2,4,4,6
+177,86023,trans,0,0,1,Fear that I’m not struggling enough,NA,NA,1,1,2,14,2,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,2,1,5,6,4,5
+178,43295,cis,0,0,1,Telling parents how I feel/ not knowing how they would respond to me,NA,NA,1,1,2,15,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,6,6,1,5,6,6,4,6,4
+179,20973,cis,1,NA,1,"Fear of recovery, fear of talking in general, shame",NA,NA,1,1,2,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,5,5,5,4,2,5,5,4,5,5
+180,53220,trans,0,0,1,"parents, anxiety, im not sure if i want to/can get better",NA,NA,1,1,9,14,2,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,6,3,6,6,5,6,6,2,2,4
+181,29614,trans,0,0,1,My weight is at normal/healthy weight so my ed isn’t seen as seriously and my family isn’t aware of my ed,NA,NA,1,2,3,14,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,6,6,6,6,6,4,6,6,6,6
+182,62193,trans,0,0,1,I’m scared to ask for help and worried that’s it’s not real.,NA,NA,1,1,5,15,2,1,0,1,1,1,0,0,1,0,0,1,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,3,3,4,2,2,6,4,5,6,5
+183,42215,trans,0,0,1,I don't like talking about things that affect my health or my body. And I don't feel like my ED is really severe enough for treatment to be honest,NA,NA,1,1,3,15,2,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,4,1,4,1,4,0,6,2,4,6
+184,41799,cis,0,0,1,I am very anxious and don't know how to tell my therapist and parents,NA,NA,1,1,4,14,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,1,1,1,0,3,5
+185,93664,trans,0,0,1,I'm not in an environment that would be safe to bring up eating disorders and stuff in,NA,NA,1,1,2,14,2,0,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,4,5,3,1,3,2,4,5,4
+186,50466,cis,1,NA,1,I don’t want a tube shoved in my stomach and being force fed. That is my worst nightmare. I would rather die,NA,NA,1,1,3,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,6,6,6,6,6,6,4,6,6
+187,78161,cis,0,0,1,"I haven’t told anyone, I have had problems with body image since I was a little girl (8). My family has very limited understanding of mental health. They have gotten better at understanding depression my body image has been really bad and I don’t know if I have an eating disorder. I know very limited info about eating disorders, I am also scared of telling my mom because I don’t want her to worry more and I just I’m tired of therapy.",NA,NA,2,2,3,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,6,6,6,5,6,6,6,6,6,6
+188,85350,trans,0,0,1,"My mom thinks my body is just 'changing', this seems like more than that..",NA,NA,2,1,7,15,2,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,3,2,0,5,4,4,6
+189,87127,cis,0,0,1,I dont want my parents to find out about my eating disorder.,NA,NA,1,1,2,15,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,5,5,6,6,6,6,6,4,6,6
+190,15065,trans,0,0,1,Difficulty asking for support.,NA,NA,1,1,3,17,2,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,5,6,5,6,5,1,6,2,6,2
+191,11827,trans,0,0,1,A very similar reason to me previous reason. My family is greatly adverse to support and would attribute an eating disorder to some other problem. Such other problem being a personal issue that doesn't require help to move past,NA,NA,1,1,4,16,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,6,6,6,2,4,6,6,2,6,6
+192,63743,trans,0,0,1,"this is a new issue for me, beginning around november. i’ve been too afraid to tell my mom because she’s already got enough stuff to deal with.",NA,NA,3,3,3,17,2,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,4,1,4,1,1,4,4,4,6,6
+193,20364,trans,1,NA,1,"M therapist doesn't take me very seriously
+",NA,NA,1,1,5,14,2,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,6,6,5,5,6,6,4,6,4
+194,17670,cis,0,0,1,I don’t feel sick enough or that I fit the criteria to get a proper eating disorder diagnosis/treatment. I feel like a wannarexic.,NA,NA,1,1,8,14,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,6,6,6,6,6,6,6,6,6,6
+195,44268,trans,0,0,1,"Guardians do not believe I have an eating disorder/that I'm ""faking it"".",NA,NA,1,2,6,13,2,1,0,1,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,6,5,6,6,5,6,6,5,4,6
+196,48593,trans,0,0,1,Stigma around EDs and low self esteem in my community,NA,NA,1,1,3,17,2,0,0,1,1,0,0,0,1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,5,5,5,1,0,1,6,6,6,4
+197,96225,cis,0,0,1,Fear of people knowing that I have problems with eating,NA,NA,1,1,6,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6,0,6,0,2,3,6,4,6,6
+198,71632,cis,0,0,1,Fear of telling people that I have body issues in a non joking manner.,NA,NA,1,1,6,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,4,4,4,1,1,0,6,4,6,2
+199,97410,cis,1,NA,1,my therapy sessions have been focusing on other things and I don't want to tell her how bad my eating disorder is vetting because I'm not even sure I want to recover,NA,NA,1,1,3,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,2,4,4,3,5,5,5,6,4
+200,90795,trans,0,0,1,I don't know who to ask about that.,NA,NA,2,1,5,17,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,5,0,3,4,6,6,4,6,6
+201,49102,trans,0,0,0,NA,1,Lack of support from family.,2,2,9,16,2,1,1,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,1,1,1,3,1,2,1
+202,68198,cis,0,0,1,"It's a bit of a hard topic for me, as a teenager I feel like telling people is just going to either Garner pity or judgement, and while I do think I need help I also think I'm self aware enough to help myself before it gets to the point where my health is at risk",NA,NA,1,1,9,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,3,1,2,1,6,1,6,1,3,4
+203,16855,trans,0,0,1,"Neither me nor my family has the money to afford such support, and it is also not widely available in my area.",NA,NA,1,1,5,13,2,1,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,4,4,4,6,4,6,5,6,5,6
+204,64531,cis,0,1,1,"I feel as if I am recovered because i don't starve myself anymore so I don't think I need any help but i want it
+",NA,NA,1,1,9,14,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,6,1,0,4,1,5,5,5,5
+205,13302,trans,0,0,1,I'm scared that I'll be thought of less highly if I reach out.,NA,NA,1,1,3,13,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,5,4,0,3,3,0,4,0,0,6
+206,57955,trans,0,0,1,I am afraid to reach out,NA,NA,1,1,3,15,2,1,0,1,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6,6,6,2,3,6,6,2,6,6
+207,21313,cis,0,0,1,Im scared to ask.,NA,NA,1,1,3,14,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,0,6,6,2,1,2,0,4,0
+208,13023,cis,0,0,1,"the same response as the last one. i don’t want to worry my mom, even though i know she would be totally understanding.",NA,NA,1,1,4,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,2,0,6,6,3,6,6,2,6
+209,69913,cis,0,0,1,I can't tell them it's hard,NA,NA,2,1,2,14,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,2,1,2,1,4,6,4,4
+210,75263,trans,0,0,1,No one is listening properly,NA,NA,1,1,4,16,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,6,6,6,6,6,6,6,4,6,6
+211,93022,cis,0,0,1,I am not ready to ask for help yet.,NA,NA,1,1,2,17,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,4,4,3,4,4,2,5,6,5,5
+212,48022,trans,0,0,1,Haven't told anyone,NA,NA,2,1,6,16,2,0,0,1,1,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,1,0,2,6,5,3,5,6
+213,22684,trans,0,0,1,I don’t feel ready for help and I do not feel “sick enough” to do so,NA,NA,1,1,2,15,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,4,4,4,3,1,3,6,6,6,4
+214,17052,cis,0,0,1,Fear.,NA,NA,1,1,3,16,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,5,4,0,3,3,4,6,6,6,6
+215,72038,trans,0,0,1,"I don't know if it counts as an eating disorder, but I have a lot food issues because I'm very picky. I don't think it's arfid, and I haven't been diagnosed for anything, so I don't want to bother people with it. I get easily triggered by food related topics and I hate eating in public, among other things",NA,NA,1,1,2,15,2,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,3,5,4,5
+216,56590,trans,0,0,1,"again, fear of my parents and others. also, i dont... really want to get better in my disorder yet. i'm not mentally ready for recovery",NA,NA,2,1,6,16,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,5,5,5,3,1,0,2,4,4,0
+217,56815,cis,0,0,1,scared to reach out/speak up,NA,NA,3,2,3,16,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,2,5,2,0
+218,76432,cis,0,0,1,I'm scared of saying something,NA,NA,2,2,2,15,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,6,6,6,6,6,6,6,6,6,6
