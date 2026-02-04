@@ -23,6 +23,7 @@ getwd() #this checks that the working directory was set correctly
 
 ```{r import data}
 demographics_and_codes <- read_csv("Data/demographics_and_codes.csv", col_types = cols(.default = "c"))
+all_rct_data <- read_csv("Data/all_rct_data.csv", col_types = cols(.default = "c"))
 
 #Make necessary variables factors
 demographics_and_codes <- demographics_and_codes %>% 
@@ -51,6 +52,17 @@ demographics_and_codes <- demographics_and_codes %>%
         starts_with("b_dem_age"), 
         starts_with("b_edeq"),
         starts_with("b_hunger")
+      ),
+      as.numeric
+    )
+  )
+
+#Make all necessary variables numeric 
+all_rct_data <- all_rct_data %>%
+  mutate(
+    across(
+      c(b_unmet_ed_now,
+        b_unmet_ed_past
       ),
       as.numeric
     )
@@ -342,4 +354,16 @@ p_values <- data.frame(
 p_values$p_adjusted <- p.adjust(p_values$p_value, method = "BH")
 p_values
 #The only p-value that was significant prior to correction was Code 4, and it is no longer significant
+```
+
+```{r n and percent for inclusion critiera}
+#n and percent of RCT sample that said yes for current unmet ED needs
+all_rct_data %>% 
+  count(b_unmet_ed_now) %>% 
+  mutate(percent = (n / sum(n))*100)
+
+#n of 152 who said yes for current unmet ED needs who provided open-ended response
+all_rct_data %>%
+  filter(!is.na(b_unmet_ed_free_1)) %>% 
+  count(b_unmet_ed_free_1)
 ```
