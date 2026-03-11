@@ -367,3 +367,17 @@ all_rct_data %>%
   filter(!is.na(b_unmet_ed_free_1)) %>% 
   count(b_unmet_ed_free_1)
 ```
+
+```{r n and percent for number of codes endorsed}
+demographics_and_codes %>%
+  mutate(row_sum = rowSums(across(Code_1:Code_11))) %>%
+  summarise(
+    sum_1 = sum(row_sum == 1),
+    percent_1 = sum(row_sum == 1) / n() * 100,
+    sum_2 = sum(row_sum == 2),
+    percent_2 = sum(row_sum == 2) / n() * 100,
+    sum_3 = sum(row_sum == 3),
+    percent_3 = sum(row_sum == 3) / n() * 100
+  )
+```
+
