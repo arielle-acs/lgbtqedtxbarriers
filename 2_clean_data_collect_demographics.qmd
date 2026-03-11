@@ -24,7 +24,7 @@ getwd() #this checks that the working directory was set correctly
 
 #Read in each data file
 combined_frequencies <- read_csv("Data/combined_frequencies.csv", col_types = cols(.default = "c"))
-baseline_data <- read_csv("Data/all_data.csv", col_types = cols(.default = "c"))
+baseline_data <- read_csv("Data/all_rct_data.csv", col_types = cols(.default = "c"))
 
 #Merge baseline data with qualitative coding coding 
 demographics_and_codes <- combined_frequencies %>%
