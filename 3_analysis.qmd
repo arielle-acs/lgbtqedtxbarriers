@@ -113,14 +113,14 @@ npercent_each_barrier <- demographics_and_codes %>%
              percent = ~sum(. == 1) / nrow(demographics_and_codes) * 100
            )))
 
-#This computes the N and percent by gender group (which matters for the tests below)
+#This computes the N and within-group percent by gender group needed for the tests below (cis % is out of the cis n, trans % is out of the trans n)
 npercent_each_barrier_grouped <- demographics_and_codes %>%
   group_by(gender_group) %>% 
   summarise(
     across(starts_with("Code_"),
            list(
              count = ~sum(. == 1),
-             percent = ~sum(. == 1) / nrow(demographics_and_codes) * 100
+             percent = ~sum(. == 1) / n() * 100
            )))
 ```
 
@@ -130,6 +130,7 @@ npercent_each_barrier_grouped <- demographics_and_codes %>%
 #Step 2 = Derive the expected values and see if any are less than 5 (this would violate an assumption)
 #Step 3a = If the assumption is not violated, conduct a chi-square test
 #Step 3b = If the assumption is violated, conduct a fisher's test
+#Step 4 = calculate odd's ratio estimate and 95% CI
 
 #Code 1 
 
@@ -149,6 +150,10 @@ code1_test <- chisq.test(code1_table)
 code1_test
 #Not significant aka no association found between gender group and code endorsement
 
+##Step 4
+fisher.test(code1_table)$estimate
+fisher.test(code1_table)$conf.int
+
 #Code 2
 
 ##Step 1
@@ -166,6 +171,10 @@ chisq.test(code2_table)$expected < 5
 code2_test <- fisher.test(code2_table)
 code2_test
 #Not significant
+
+##Step 4
+fisher.test(code2_table)$estimate
+fisher.test(code2_table)$conf.int
 
 #Code 3
 
@@ -185,6 +194,10 @@ code3_test <- chisq.test(code3_table)
 code3_test
 #Not significant
 
+##Step 4
+fisher.test(code3_table)$estimate
+fisher.test(code3_table)$conf.int
+
 #Code 4
 
 ##Step 1
@@ -202,6 +215,10 @@ chisq.test(code4_table)$expected < 5
 code4_test <- fisher.test(code4_table)
 code4_test
 #Significant aka there is an association between gender group and code endorsement (which makes a lot of sense because this the code about lack of gender affirming care). 
+
+##Step 4
+fisher.test(code4_table)$estimate
+fisher.test(code4_table)$conf.int
 
 #Code 5
 
@@ -221,6 +238,10 @@ code5_test <- chisq.test(code5_table)
 code5_test
 #Not significant
 
+##Step 4
+fisher.test(code5_table)$estimate
+fisher.test(code5_table)$conf.int
+
 #Code 6
 
 ##Step 1
@@ -238,6 +259,11 @@ chisq.test(code6_table)$expected < 5
 code6_test <- chisq.test(code6_table)
 code6_test
 #Not significant
+
+fisher.test(code6_table)$estimate
+fisher.test(code6_table)$conf.int
+
+##Step 4
 
 #Code 7
 
@@ -257,6 +283,10 @@ code7_test <- chisq.test(code7_table)
 code7_test
 #Not significant
 
+##Step 4
+fisher.test(code7_table)$estimate
+fisher.test(code7_table)$conf.int
+
 #Code 8
 
 ##Step 1
@@ -274,6 +304,10 @@ chisq.test(code8_table)$expected < 5
 code8_test <- chisq.test(code8_table)
 code8_test
 #Not significant
+
+##Step 4
+fisher.test(code8_table)$estimate
+fisher.test(code8_table)$conf.int
 
 #Code 9
 
@@ -293,6 +327,10 @@ code9_test <- chisq.test(code9_table)
 code9_test
 #Not significant
 
+##Step 4
+fisher.test(code9_table)$estimate
+fisher.test(code9_table)$conf.int
+
 #Code 10
 
 ##Step 1
@@ -311,6 +349,10 @@ code10_test <- fisher.test(code10_table)
 code10_test
 #Not significant
 
+##Step 4
+fisher.test(code10_table)$estimate
+fisher.test(code10_table)$conf.int
+
 #Code 11
 
 ##Step 1
@@ -328,6 +370,10 @@ chisq.test(code11_table)$expected < 5
 code11_test <- chisq.test(code11_table)
 code11_test
 #Not significant
+
+##Step 4
+fisher.test(code11_table)$estimate
+fisher.test(code11_table)$conf.int
 ```
 
 ```{r BH correction}
