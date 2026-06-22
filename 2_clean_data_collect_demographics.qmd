@@ -166,7 +166,14 @@ demographics_and_codes %>%
 #0: No; 1: Yes
 
 #Age
+
+##Mean and SD
 demographics_and_codes %>% 
   summarize(mean = mean(b_dem_age, na.rm = TRUE),
             sd = sd(b_dem_age, na.rm = TRUE))
+
+##N and percent
+demographics_and_codes %>% 
+  count(b_dem_age) %>% 
+    mutate(percent = (n / sum(n))*100)
 ```
